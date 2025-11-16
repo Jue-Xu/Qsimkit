@@ -1,6 +1,7 @@
 *.DS_Store
-# Auto-generated version file (generated from git tags during build)
+# Auto-generated version files (generated from git tags during build)
 qsimkit/VERSION
+qsimkit/_version.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
