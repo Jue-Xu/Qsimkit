@@ -122,26 +122,10 @@ error_analytic = analytic_bound(H=h_list, k=1, t=1.0, r=100)
 if len(h_list) == 2:
     bound, e1, e2, e3 = interference_bound(h_list, t=1.0, r=100)
 
-# Light-cone tail bound (for nearest-neighbor Hamiltonians)
-error_lc = lc_tail_bound(r=100, n=10, h=nn_chain, t=1.0, ob_type='singl')
 ```
 
 ### 4. Finding Optimal Trotter Steps
-
-```python
-from qsimkit.utils import binary_search_r
-
-# Find minimum r to achieve target error
-target_error = 1e-3
-r_optimal = binary_search_r(
-    h_list=h_list,
-    order=2,
-    t=1.0,
-    target_error=target_error,
-    norm_type='spectral'
-)
-print(f"Need r={r_optimal} steps for error < {target_error}")
-```
+todo
 
 ## Package Structure
 
@@ -163,35 +147,8 @@ qsimkit/
 More examples and tutorials: [https://jue-xu.github.io/cookbook-quantum-simulation](https://jue-xu.github.io/cookbook-quantum-simulation)
 
 ## Citation
+todo
 
-If you use Qsimkit in your research, please cite:
-
-```bibtex
-@software{qsimkit,
-  author = {Xu, Jue},
-  title = {Qsimkit: Quantum Simulation Toolkit},
-  url = {https://github.com/Jue-Xu/Qsimkit},
-  year = {2024}
-}
-```
-
-## Migration from quantum-simulation-recipe
-
-If you're upgrading from the old `quantum-simulation-recipe` package:
-
-```python
-# Old imports
-from quantum_simulation_recipe.spin import Nearest_Neighbour_1d
-from quantum_simulation_recipe.trotter import pf
-from quantum_simulation_recipe.bounds import tight_bound
-
-# New imports (just change package name)
-from qsimkit.spin import Nearest_Neighbour_1d
-from qsimkit.trotter import pf
-from qsimkit.bounds import tight_bound
-```
-
-All functionality remains the same, just the package name has changed.
 
 ## Development
 
