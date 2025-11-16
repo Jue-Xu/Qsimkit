@@ -1,7 +1,10 @@
 # Qsimkit - Quantum Simulation Toolkit
 
 [![License](https://img.shields.io/github/license/Jue-Xu/Qsimkit.svg?style=popout-square)](https://opensource.org/licenses/Apache-2.0)
+[![PyPI version](https://badge.fury.io/py/qsimkit.svg)](https://badge.fury.io/py/qsimkit)
 [![Release](https://img.shields.io/github/v/release/jue-xu/Qsimkit?include_prereleases)](https://github.com/Jue-Xu/Qsimkit/releases)
+
+> **⚠️ Disclaimer**: This package is still under active development. APIs may change, and features are being continuously improved. Use in production with caution.
 
 A Python package for quantum simulation with error bounds and Trotterization tools. Built on [Qiskit](https://www.ibm.com/quantum/qiskit) and [OpenFermion](https://github.com/quantumlib/OpenFermion).
 
@@ -16,12 +19,12 @@ A Python package for quantum simulation with error bounds and Trotterization too
 
 ##  Installation
 
-### From PyPI (coming soon)
+### From PyPI
 ```bash
 pip install qsimkit
 ```
 
-### From source
+### From source (for development)
 ```bash
 git clone https://github.com/Jue-Xu/Qsimkit.git
 cd Qsimkit
@@ -32,6 +35,8 @@ pip install -e .
 - Python >= 3.10
 - Core: numpy, scipy, qiskit, matplotlib
 - Optional: jax/jaxlib (GPU acceleration), openfermion (fermionic systems)
+
+**Note**: The package includes heavy dependencies (qiskit, openfermion). Installation may take a few minutes.
 
 ## Quick Start
 
