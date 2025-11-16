@@ -1,1 +1,1 @@
-from quantum_simulation_recipe import *
+from qsimkit import *
