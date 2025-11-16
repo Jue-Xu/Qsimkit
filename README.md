@@ -1,7 +1,7 @@
 # Qsimkit - Quantum Simulation Toolkit
 
 [![License](https://img.shields.io/github/license/Jue-Xu/Qsimkit.svg?style=popout-square)](https://opensource.org/licenses/Apache-2.0)
-[![PyPI version](https://badge.fury.io/py/qsimkit.svg)](https://badge.fury.io/py/qsimkit)
+[![PyPI version](https://img.shields.io/pypi/v/qsimkit.svg)](https://pypi.org/project/qsimkit/)
 [![Release](https://img.shields.io/github/v/release/jue-xu/Qsimkit?include_prereleases)](https://github.com/Jue-Xu/Qsimkit/releases)
 
 > **⚠️ Disclaimer**: This package is still under active development. APIs may change, and features are being continuously improved. Use in production with caution.
